@@ -22,7 +22,7 @@ _APT_INSTALL_COMMANDS = [
     [
         "apt",
         "install",
-        "{directory}/NILinux{release}DeviceDrivers/ni-ubuntu{version}-drivers-{release}.deb",
+        "{directory}/ni-ubuntu{version}-drivers-{release}.deb",
     ],
     ["apt", "update"],
     ["apt", "install", "ni-daqmx"],
@@ -36,7 +36,7 @@ _ZYPPER_INSTALL_COMMANDS = [
         "zypper",
         "--no-gpg-checks",
         "install",
-        "{directory}/NILinux{release}DeviceDrivers/ni-opensuse{version}-drivers-{release}.rpm",
+        "{directory}/ni-opensuse{version}-drivers-{release}.rpm",
     ],
     ["zypper", "refresh"],
     ["zypper", "install", "ni-daqmx"],
@@ -49,7 +49,7 @@ _YUM_INSTALL_COMMANDS = [
     [
         "yum",
         "install",
-        "{directory}/NILinux{release}DeviceDrivers/ni-rhel{version}-drivers-{release}.rpm",
+        "{directory}/ni-rhel{version}-drivers-{release}.rpm",
     ],
     ["yum", "install", "ni-daqmx"],
     ["dkms", "autoinstall"],
